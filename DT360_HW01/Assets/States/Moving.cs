@@ -37,10 +37,10 @@ public class Moving : BaseState
         {
             stateMachine.ChangeState(((MovementSM)stateMachine).idleState);
         }
-        if (Mathf.Abs(_jumpInput) > Mathf.Epsilon)
-        {
-            stateMachine.ChangeState(((MovementSM)stateMachine).jumpState);
-        }
+        //if (Mathf.Abs(_jumpInput) > Mathf.Epsilon)
+        //{
+        //    stateMachine.ChangeState(((MovementSM)stateMachine).jumpState);
+        //}
         if(_cs.currentCoin >= 10 && _ca.enter == true)
         {
             Debug.Log("Send");
